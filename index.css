@@ -1,0 +1,93 @@
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+    background-color: black;
+}
+
+.logo-container {
+    flex: 0 0 auto; 
+}
+
+.logo {
+    width: 100px; 
+    height: auto;
+}
+
+.text-container {
+    text-align: right; 
+    flex: 1; /* Takes up the remaining space */
+    margin-left: 20px;
+    color: white;
+}
+
+h1 {
+    font-size: 19.2px;
+    margin-bottom: 5px;
+}
+
+h2 {
+    font-size: 19.2px;
+    margin-bottom: 5px;
+    
+}
+
+p {
+    font-size: 14.4px;
+    
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #5E50A1; /* Dark purple color */
+    padding: 10px 20px; /* Padding around the navbar */
+}
+
+.nav-links {
+    list-style: none; /* Remove bullet points */
+    display: flex; /* Display links in a row */
+    justify-content: space-around; /* Space out the links evenly */
+}
+
+.nav-links li {
+    flex: 1; /* Each link takes equal space */
+    text-align: center; /* Center text inside each link */
+}
+
+.nav-links a {
+    color: white; /* White text color */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 19.2px; /* Font size */
+    padding: 10px 0; /* Vertical padding for clickable area */
+    display: block; /* Makes the entire area clickable */
+    transition: background-color 0.3s; /* Smooth transition for background */
+}
+
+.nav-links a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Light background on hover */
+}
+
+@media (max-width: 600px) {
+    .nav-links {
+        flex-direction: column; /* Stack links vertically on small screens */
+    }
+}
