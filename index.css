@@ -91,3 +91,51 @@ body {
         flex-direction: column; /* Stack links vertically on small screens */
     }
 }
+
+
+footer {
+    background-color: #4a4a4a;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.footer-content p {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.footer-content a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
+
+.social {
+    display: flex;
+    gap: 15px;
+}
+
+.social img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: rgb(238, 203, 203);
+    
+}
+
+.social img:hover {
+    opacity: 0.8;
+    background-color: rgb(88, 188, 88);
+}
