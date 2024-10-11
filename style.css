@@ -1,0 +1,54 @@
+h1{
+    font-size: 50px;
+    color: rgb(75, 26, 3);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+body{
+    background-image: url(ss.jpg);
+}
+p{
+    text-align: center;
+}
+.box1{
+    background-color: rgb(182, 218, 252);
+    margin-top: 20vh;
+    margin-left: 30vh;
+    margin-right: 30vh;
+    padding: 0%;
+    margin-bottom: 20vh;
+}
+span{
+    margin-left: 64vh;
+    text-align: center;
+    background-color: rgb(233, 155, 83);
+    border-top: 0.5vh solid rgb(75, 26, 3);
+    border-bottom: 0.5vh solid rgb(75, 26, 3);
+    border-left: 0.5vh solid rgb(75, 26, 3);
+    border-right: 0.5vh solid rgb(75, 26, 3);
+}
+h3{
+    text-align: center;
+    color: rgba(0, 0, 0, 0.89);
+}
+.box2{
+    background-color: rgb(182, 218, 252);
+    margin-top: 10vh;
+    margin-left: 30vh;
+    margin-right: 30vh;
+}
+input{
+    margin-left: 64vh;
+    margin-right: 60vh;
+    margin-top: 1vh;
+}
+button{
+    background-color: rgb(253, 190, 95);
+    margin-left: 64vh;
+    margin-right: 60vh;
+    margin-top: 1vh;
+}
+
