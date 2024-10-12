@@ -75,8 +75,8 @@ body {
 }
 
 .navbar {
-    background-color: #4a4a48; /* Dark purple color */
-    padding: 10px 20px; /* Padding around the navbar */
+    background-color: #4a4a48; 
+    padding: 10px 20px; 
     position: sticky;
     top: 0;
     width: 100%;
@@ -87,22 +87,22 @@ body {
 }
 
 .nav-links {
-    list-style: none; /* Remove bullet points */
-    display: flex; /* Display links in a row */
-    justify-content: space-around; /* Space out the links evenly */
+    list-style: none; 
+    display: flex; 
+    justify-content: space-around; 
     
 }
 
 .nav-links li {
-    flex: 1; /* Each link takes equal space */
-    text-align: center; /* Center text inside each link */
+    flex-grow: 1; 
+    text-align: center; 
 }
 
 .nav-links a {
     font-weight: bold;
-    color: #ebebe3; /* White text color */
-    text-decoration:none; /* Remove underline from links */
-    font-size: 19.2px; /* Font size */
+    color: #ebebe3; 
+    text-decoration:none; 
+    font-size: 1.2em; 
     padding: 10px 0; 
     display: block; 
     transition: background-color 0.3s; 
@@ -114,7 +114,7 @@ body {
 
 @media (max-width: 600px) {
     .nav-links {
-        flex-direction: column; /* for making the view of icons vertical when page is too small */
+        flex-direction: column; 
     }
 }
 
