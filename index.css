@@ -26,7 +26,8 @@ body {
 }
 
 .logo-container {
-    flex: 0 0 auto; 
+    flex-grow: 0; 
+    flex-shrink: 0;
 }
 
 .logo {
@@ -36,7 +37,7 @@ body {
 
 .text-container {
     text-align: right; 
-    flex: 1; /* Takes up the remaining space */
+    flex-grow: 1; 
     margin-left: 20px;
     color: white;
 }
@@ -102,9 +103,9 @@ body {
     color: #ebebe3; /* White text color */
     text-decoration:none; /* Remove underline from links */
     font-size: 19.2px; /* Font size */
-    padding: 10px 0; /* Vertical padding for clickable area */
-    display: block; /* Makes the entire area clickable */
-    transition: background-color 0.3s; /* Smooth transition for background */
+    padding: 10px 0; 
+    display: block; 
+    transition: background-color 0.3s; 
 }
 
 .nav-links a:hover {
@@ -113,7 +114,7 @@ body {
 
 @media (max-width: 600px) {
     .nav-links {
-        flex-direction: column; /* Stack links vertically on small screens */
+        flex-direction: column; /* for making the view of icons vertical when page is too small */
     }
 }
 
@@ -154,7 +155,8 @@ body {
 }
 
 footer {
-    background-color: #c19898;
+    /* background-color: #c19898; */
+    background-color: #4c4c4d;
     color: #fff;
     padding: 20px 0;
    
@@ -192,7 +194,8 @@ footer {
     width: 35px;
     height: 35px;
     border-radius: 50%;
-    background-color: #c19898;
+    /* background-color: #c19898; */
+    background-color: #4c4c4d;
     
 }
 
@@ -281,7 +284,7 @@ nav ul li a::before {
 }
 .camp{
     /* position : absolute; */
-    width:70%;
+    width:80%;
     /* left:15%;
     top:20%; */
     background-color:white;
@@ -290,5 +293,9 @@ nav ul li a::before {
     padding: 20px;
 }
 #short{
-    height: 220px;
+    /* height: 220px; */
+}
+#intro{
+    text-align: center;
+    padding-bottom: 20px;
 }
