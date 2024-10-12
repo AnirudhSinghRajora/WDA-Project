@@ -286,6 +286,6 @@ nav ul li a::before {
     top:20%; */
     background-color:white;
     margin: auto;
-    border-radius: 5%;
+    border-radius: 10px;
     padding: 20px;
 }
