@@ -24,6 +24,7 @@
 }
 .header-logo img {
   height: 100px;
+  width: fit-content;
 }
 .header-text {
   text-align: right;
