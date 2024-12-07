@@ -269,3 +269,28 @@ footer {
     opacity: 0.8;
     background-color: #4a4a48;
 }
+
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    display: none;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    text-align: center;
+    line-height: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  #scrollToTopBtn:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+  }

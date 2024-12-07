@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="CSS/index.css">
     <link rel="icon" href="images/Icon.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -111,7 +111,24 @@
     </main>
     <br><br><br>
 
-
+    <button id="scrollToTopBtn" title="Scroll to top">↑</button>
+   
+    <script>
+        const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 200) {
+                scrollToTopBtn.style.display = "block";
+            } else {
+                scrollToTopBtn.style.display = "none";
+            }
+        });
+        scrollToTopBtn.addEventListener("click", () => {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+    </script>
 
     <footer>
         <div class="footer">
