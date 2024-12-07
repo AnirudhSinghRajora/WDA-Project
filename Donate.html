@@ -3,11 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>project</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Donate</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-    <link rel="stylesheet" href="donate.css">
+    <link rel="stylesheet" href="CSS/donate.css">
+    <link rel="icon" href="images/donate.ico" type="image/x-icon">
+
+    <style>
+      .donation-header{
+      background-image: url('images/image2.webp'); 
+      }
+    </style>
 
 </head>
 <body>
@@ -24,7 +30,7 @@
         </div>
     </div>
 
-    <nav id="N1" class="navbar navbar-expand-lg cn">
+    <nav id="N1" class="navbar position-sticky top-0 navbar-expand-lg cn">
         <div class="collapse navbar-collapse container-fluid" id="navbarNav">
             <ul class="navbar-nav w-100 text-center">
                 <li class="nav-item col-2">
@@ -54,23 +60,6 @@
     </div>
    
     <main class="container my-5">
-      <section class="motivational-text">
-        <h2 class="mb-3">Why Your Donation Matters</h2>
-        <p>
-          At Seraphim, we believe in the transformative power of culture and social awareness.  
-          Your support helps us:
-        </p>
-        <ul class="list-unstyled">
-          <li>🎭 Organize cultural events that celebrate diversity.</li>
-          <li>📚 Conduct workshops to educate and empower our community.</li>
-          <li>🤝 Support underprivileged individuals with our outreach programs.</li>
-        </ul>
-        <p>
-          Every donation—big or small—makes a real difference. Together, we can create a brighter future.  
-          Be a part of this journey. Donate today!
-        </p>
-      </section>
-  
       <section class="donation-form">
         <h2 class="text-center mb-4">Make a Donation</h2>
         <form action="/donate" method="POST">
@@ -98,8 +87,84 @@
           <button type="submit" class="btn btn-primary w-100">Donate Now</button>
         </form>
       </section>
+
+      
+     
+
+      <section class="py-5 mb-5 rounded">
+        <div class="container">
+            <h2 class="text-center mb-4">Quotes of the Day</h2>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <div id="quote" class="p-4 border rounded shadow-sm" style="background-color: #ffffff; font-size: 20px; color: #333;">
+                        Loading quote...
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script>
+        const quotes = [
+            "The best way to find yourself is to lose yourself in the service of others. – Mahatma Gandhi",
+            "You must be the change you wish to see in the world. – Mahatma Gandhi",
+            "Alone we can do so little; together we can do so much. – Helen Keller",
+            "Act as if what you do makes a difference. It does. – William James",
+            "It always seems impossible until it’s done. – Nelson Mandela",
+            "The only thing necessary for the triumph of evil is for good men to do nothing. – Edmund Burke",
+            "Injustice anywhere is a threat to justice everywhere. – Martin Luther King Jr.",
+            "We can't help everyone, but everyone can help someone. – Ronald Reagan"
+        ];
+
+        function showRandomQuote() {
+            const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+            document.getElementById("quote").textContent = randomQuote;
+        }
+    
+        window.onload = function() {
+            showRandomQuote();  
+            setInterval(showRandomQuote, 5000)
+        };
+    </script>
+
+<section class="motivational-text">
+  <h2 class="mb-3">Why Your Donation Matters</h2>
+  <p>
+    At Seraphim, we believe in the transformative power of culture and social awareness.  
+    Your support helps us:
+  </p>
+  <ul class="list-unstyled">
+    <li>🎭 Organize cultural events that celebrate diversity.</li>
+    <li>📚 Conduct workshops to educate and empower our community.</li>
+    <li>🤝 Support underprivileged individuals with our outreach programs.</li>
+  </ul>
+  <p>
+    Every donation—big or small—makes a real difference. Together, we can create a brighter future.  
+    Be a part of this journey. Donate today!
+  </p>
+</section>
+  
+     
     </main>
 
+    <button id="scrollToTopBtn" title="Scroll to top">↑</button>
+   
+    <script>
+        const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 200) {
+                scrollToTopBtn.style.display = "block";
+            } else {
+                scrollToTopBtn.style.display = "none";
+            }
+        });
+        scrollToTopBtn.addEventListener("click", () => {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+    </script>
     
 <footer class="footer">
     <div class="container">
