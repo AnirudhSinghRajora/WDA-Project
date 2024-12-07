@@ -33,10 +33,10 @@
     color: #6c757d;
     font-size: 1.1rem;
 }
-.card {
+.card ,  .testimonial{
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.card:hover {
+.card:hover , .testimonial:hover {
     transform: translateY(-10px);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
