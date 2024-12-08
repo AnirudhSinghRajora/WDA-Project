@@ -94,6 +94,7 @@ body {
     list-style: none; 
     display: flex; 
     justify-content: space-around; 
+    white-space: nowrap;
     
 }
 
@@ -126,7 +127,13 @@ nav ul li a::before {
     transform: scaleX(0);
     transition: transform 0.3s ease-in-out;
   }
-  
+
+  @media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column; 
+    }
+}
+
   #I1:hover::before {
     transform: scaleX(1);  
     }
