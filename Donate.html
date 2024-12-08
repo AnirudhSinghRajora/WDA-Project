@@ -118,7 +118,7 @@
 
         function showRandomQuote() {
             const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
-            document.getElementById("quote").textContent = randomQuote;
+            document.getElementById("quote").innerText = randomQuote;
         }
     
         window.onload = function() {
