@@ -71,6 +71,9 @@ nav {
 #I6:hover::before {
   transform: scaleX(1);
 }
+nav ul{
+    justify-content: space-around;
+}
 .cn {
   background-color: #4a4a48;
 }
