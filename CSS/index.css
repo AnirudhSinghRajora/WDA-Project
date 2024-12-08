@@ -90,6 +90,7 @@ body {
     list-style: none; 
     display: flex; 
     justify-content: space-around; 
+    white-space: nowrap;
     
 }
 
@@ -112,7 +113,7 @@ body {
     color: #c19898;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .nav-links {
         flex-direction: column; 
     }
