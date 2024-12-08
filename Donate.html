@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<htm lang="en">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -118,7 +118,7 @@
 
         function showRandomQuote() {
             const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
-            document.getElementById("quote").textContent = randomQuote;
+            document.getElementById("quote").innerText = randomQuote;
         }
     
         window.onload = function() {
@@ -187,4 +187,4 @@
     </div>
 </footer>
 </body>
-</htm>
+</html>
