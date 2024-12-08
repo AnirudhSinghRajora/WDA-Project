@@ -27,6 +27,9 @@
 
     <nav id="N1" class="navbar position-sticky top-0 navbar-expand-lg cn">
         <div class="collapse navbar-collapse container-fluid" id="navbarNav">
+            <button class="navbar-toggler" id="navbar-toggler" onclick="expand()">
+                <span class="navbar-toggler-icon"></span>
+            </button>
           <ul class="navbar-nav w-100 text-center">
             <li class="nav-item col-1">
               <a class="nav-link ca" href="index.html" id="I1">Our Work</a>
@@ -188,6 +191,18 @@
                 al1[i].style.display='none';
             }
         };
+
+        let clicked = false;
+        let navUl = document.getElementById('navUl');
+        let expand = () => {
+            clicked = !(clicked);
+            if (clicked==false){
+                navUl.style.display="none";
+            }
+            else{
+                navUl.style.display="flex";
+            }
+        }
     </script>
 
 
