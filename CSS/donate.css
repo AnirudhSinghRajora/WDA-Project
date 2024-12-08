@@ -29,6 +29,7 @@ body{
   }
   nav {
     font-weight: bold;
+    white-space: nowrap;
   }
   .nav-link::before {
     content: "";
@@ -143,4 +144,21 @@ body{
 
 nav ul{
   justify-content: space-around;
+}
+#navbar-toggler{
+  border-color: white;
+  border-width: 2px;
+}
+@media (max-width : 768px) {
+  #navUl{
+    display: none;
+  }
+  nav ul li{
+    padding-left: 45%;
+  }
+}
+@media (min-width : 768px){
+  #navUl{
+    display: flex;
+  }
 }
