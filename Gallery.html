@@ -199,11 +199,17 @@
                 navUl.style.display="none";
             }
             else{
-                navUl.style.display="flex";
+                navUl.style.display = "flex";
             }
             clicked = !(clicked);
         }
-    </script>
+        setInterval(() => {
+            if(window.innerWidth > 768){
+        navUl.style.display = "flex";
+        } 
+    }, 100);
+
+</script>
 
 
         <footer class="footer">

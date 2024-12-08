@@ -27,34 +27,36 @@
     </div>
 
     
-    <nav id="N1" class="navbar position-sticky top-0 navbar-expand-lg cn">
-        <div class="collapse navbar-collapse container-fluid" id="navbarNav">
-          <ul class="navbar-nav w-100 text-center">
-            <li class="nav-item col-1">
-              <a class="nav-link ca" href="index.html" id="I1">Our Work</a>
+    <nav id="N1" class="navbar position-sticky top-0 navbar-expand-md cn">
+      <div class="collapse navbar-collapse container-fluid" id="navbarNav">
+          <button class="navbar-toggler" id="navbar-toggler" onclick="expand()">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+        <ul class="navbar-nav w-100 text-center" id="navUl">
+          <li class="nav-item col-1">
+            <a class="nav-link ca" href="index.html" id="I1">Our Work</a>
+          </li>
+          <li class="nav-item col-1">
+            <a class="nav-link ca" href="about.html" id="I2">About Us</a>
+          </li>
+          <li class="nav-item col-1">
+            <a class="nav-link ca" href="Gallery.html" id="I3">Gallery</a>
+          </li>
+          <li class="nav-item col-1">
+            <a class="nav-link ca" href="seraphs.html" id="I4">Seraphs</a>
+          </li>
+          <li class="nav-item col-1">
+            <a class="nav-link ca" href="contactUs.html" id="I3">Contact Us</a>
+          </li>
+          <li class="nav-item col-1">
+              <a class="nav-link ca" href="Donate.html" id="I2">Donate</a>
             </li>
             <li class="nav-item col-1">
-              <a class="nav-link ca" href="about.html" id="I2">About Us</a>
+              <a class="nav-link ca" href="FuturePlans.html" id="I6">Future Plans</a>
             </li>
-            <li class="nav-item col-1">
-              <a class="nav-link ca" href="Gallery.html" id="I3">Gallery</a>
-            </li>
-            <li class="nav-item col-1">
-              <a class="nav-link ca" href="seraphs.html" id="I4">Seraphs</a>
-            </li>
-            <li class="nav-item col-1">
-              <a class="nav-link ca" href="contactUs.html" id="I5">Contact Us</a>
-            </li>
-            <li class="nav-item col-1">
-                <a class="nav-link ca" href="Donate.html" id="I2">Donate</a>
-              </li>
-              <li class="nav-item col-1">
-                <a class="nav-link ca" href="FuturePlans.html" id="I6">Future Plans</a>
-              </li>
-          </ul>
-        </div>
-      </nav> 
-
+        </ul>
+      </div>
+    </nav> 
       <div>
 
           <div class="Heading inline">
@@ -216,6 +218,23 @@
                 btn.classList.add("btn-outline-dark")
             }
         }
+
+        let clicked = false;
+        let navUl = document.getElementById('navUl');
+        let expand = () => {
+            clicked = !(clicked);
+            if (clicked==false){
+                navUl.style.display="none";
+            }
+            else{
+                navUl.style.display = "flex";
+            }
+        }
+        setInterval(() => {
+            if(window.innerWidth > 768){
+        navUl.style.display = "flex";
+        } 
+    }, 100);
     </script>
   </body>
 </html>
