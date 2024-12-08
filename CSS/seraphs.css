@@ -127,30 +127,24 @@ nav ul li a::before {
     transition: transform 0.3s ease-in-out;
   }
   
-  #I3:hover::before {
+  #I1:hover::before {
     transform: scaleX(1);  
-  
-  }
-  #I4:hover::before {
+    }
+    #I2:hover::before {
     transform: scaleX(0.67); 
-  
-  }
-  #I5:hover::before {
-    transform: scaleX(0.34); 
-  
-  }
-  #I6:hover::before {
-    transform: scaleX(0.34);
-  
-  }
-  #I7:hover::before {
-    transform: scaleX(0.67);  
-  
-  } 
-  #I8:hover::before {
+    }
+    #I3:hover::before {
+    transform: scaleX(0.40); 
+    }
+    #I4:hover::before {
+    transform: scaleX(0.15);
+    }
+    #I5:hover::before {
+    transform: scaleX(0.36);  
+    } 
+    #I6:hover::before {
     transform: scaleX(1); 
-  
-  }
+    }
 .container {
     text-align: center;
     margin: 20px;

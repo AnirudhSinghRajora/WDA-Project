@@ -116,13 +116,13 @@ transform: scaleX(1);
 transform: scaleX(0.67); 
 }
 #I3:hover::before {
-transform: scaleX(0.34); 
+transform: scaleX(0.40); 
 }
 #I4:hover::before {
-transform: scaleX(0.34);
+transform: scaleX(0.15);
 }
 #I5:hover::before {
-transform: scaleX(0.67);  
+transform: scaleX(0.36);  
 } 
 #I6:hover::before {
 transform: scaleX(1); 
@@ -136,4 +136,7 @@ color: #ebebe3;
 }
 .ca:hover{
 color: #c19898
+}
+nav ul{
+    justify-content: space-around;
 }
