@@ -123,14 +123,13 @@
         const images = document.querySelectorAll('.pic');
         const show = document.getElementById('imageShow');
         const shownImage = document.getElementById('shownImage');
-        const gallery = Array.from(images);
         let currentIndex = 0;
 
         images.forEach((image, index) => {
             image.addEventListener("click", () => {
                 show.style.display = "flex";
                 currentIndex = index;
-                shownImage.src = gallery[currentIndex].src;
+                shownImage.src = images[currentIndex].src;
             });
         });
 
@@ -140,11 +139,11 @@
             currentIndex = currentIndex + direction;
 
             if (currentIndex < 0) {
-                currentIndex = gallery.length - 1;
-            } else if (currentIndex >= gallery.length) {
+                currentIndex = images.length - 1;
+            } else if (currentIndex >= images.length) {
                 currentIndex = 0;
             }
-            shownImage.src = gallery[currentIndex].src;
+            shownImage.src = images[currentIndex].src;
         }
 
         let clos = () => {
