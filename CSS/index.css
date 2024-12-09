@@ -114,6 +114,9 @@ body {
 }
 
 @media (max-width: 768px) {
+    .navbar {
+        position: static;
+    }
     .nav-links {
         flex-direction: column; 
     }
