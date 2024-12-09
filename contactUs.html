@@ -109,18 +109,18 @@
     </div>
 </section>
 
-<button id="scrollToTopBtn" title="Scroll to top">↑</button>
+<button id="scrollTop" title="Scroll to top">↑</button>
    
 <script>
-    const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+    const scrollTop = document.getElementById("scrollTop");
     window.addEventListener("scroll", () => {
         if (window.scrollY > 200) {
-            scrollToTopBtn.style.display = "block";
+            scrollTop.style.display = "block";
         } else {
-            scrollToTopBtn.style.display = "none";
+            scrollTop.style.display = "none";
         }
     });
-    scrollToTopBtn.addEventListener("click", () => {
+    scrollTop.addEventListener("click", () => {
         window.scrollTo({
             top: 0,
             behavior: "smooth"
