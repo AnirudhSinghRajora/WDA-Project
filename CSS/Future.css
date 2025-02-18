@@ -154,7 +154,7 @@ nav ul{
     justify-content: space-around;
 }
 
-#scrollToTopBtn {
+#scrollTop {
     position: fixed;
     bottom: 20px;
     right: 20px;

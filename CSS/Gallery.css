@@ -99,7 +99,7 @@ nav ul{
   width: 200px;
   justify-items: center;
 }
-#scrollToTopBtn {
+#scrollTop {
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -119,7 +119,7 @@ nav ul{
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-#scrollToTopBtn:hover {
+#scrollTop:hover {
   background-color: #0056b3;
   transform: scale(1.1);
 }
